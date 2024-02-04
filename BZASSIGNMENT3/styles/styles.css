@@ -1,4 +1,31 @@
-header div.hamburger {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    background-color: rgb(224, 57, 141);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  header h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #fff;
+    padding: 20px;
+  }
+  header .hamburger-container {
+    padding: 20px;
+    display: inline-block;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    height: 85px;
+    width: 100px;
+  }
+  header div.hamburger {
     overflow: hidden;
     width: 50px;
     padding: 5px 0;
@@ -8,7 +35,7 @@ header div.hamburger {
     width: 50px;
     display: block;
     margin-bottom: 10px;
-    background-color: #000;
+    background-color: #fff;
     position: relative;
     top: 0;
     left: 0;
@@ -21,7 +48,7 @@ header div.hamburger {
     display: none;
   }
   header .checkbox:checked ~ nav {
-    position: relative;
+    position: absolute;
     left: 0;
   }
   header .checkbox:checked ~ label .hamburger span {
@@ -38,9 +65,32 @@ header div.hamburger {
     top: -15px;
     transform: rotateZ(-45deg);
   }
+  header .logo {
+    color: #fff;
+    font-size: 1.5em;
+    padding: 10px 0;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
   header nav {
-    position: relative;
-    left: -200px;
+    position: absolute;
+    left: -500px;
+    top: 0;
+    bottom: 0;
     transition: all 1s ease;
-    width: 200px;
+    width: 300px;
+    background-color: rgb(246, 187, 227);
+    font-size: 2em;
+    padding: 100px 20px;
+  }
+  header nav ul {
+    list-style-type: none;
+  }
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 30px;
+    display: inline-block;
+  }
+  header nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
   }/*# sourceMappingURL=styles.css.map */
